@@ -1,0 +1,58 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <style>
+  .ui-widget-content {
+    background-image: url('cute_cat_eyes.jpg');
+    background-repeat: repeat;
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    height: 250px;
+    /*padding: 0.5em;*/
+    width: 250px;
+  }
+  #one {
+    background-position: left top;
+  }
+  #two {
+    background-position: right top;
+  }
+  #three {
+    background-position: left bottom;
+  }
+  #four {
+    background-position: right bottom;
+  }
+  </style>
+  <script>
+  $(function() {
+    $( ".ui-widget-content" ).draggable();
+  });
+  </script>
+</head>
+<body>
+ 
+<div id="one" class="ui-widget-content">
+  <p> 1 </p>
+</div>
+<div id="two" class="ui-widget-content">
+  <p> 2 </p>
+</div>
+<div id="three" class="ui-widget-content">
+  <p> 3 </p>
+</div>
+<div id="four" class="ui-widget-content">
+  <p> 4 </p>
+</div>
+ 
+ 
+</body>
+</html>
