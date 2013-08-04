@@ -1,40 +1,44 @@
-  .ui-widget-content {
-    background-image: url('img/cute_cat_eyes.jpg');
-    background-repeat: repeat;
-    /*background-repeat: no-repeat;*/
-    /*background-attachment: fixed;*/
-    /*background-position: center;*/
-    /*height: 250px;
-    padding: 0.5em;
-    width: 250px;*/
-  }
-  .puzzle-piece {
-    /*background-position: left top;*/
-    position: absolute;
-    background-image: url('img/pic1.jpg');
-    background-repeat: repeat;
-    /*background-repeat: no-repeat;*/
-    /*background-attachment: fixed;*/
-    /*background-position: center;*/
-    /*padding: 0.5em;*/
-    /*left: 0px;
-    top: 0px;*/
-  }
-  #two {
-    background-position: right top;
-    position: absolute;
-    left: 250px;
-    top: 0px;
-  }
-  #three {
-    background-position: left bottom;
-    position: absolute;
-    top:250px;
-    left: 0px;
-  }
-  #four {
-    background-position: right bottom;
-    position: absolute;
-    top:250px;
-    left:250px;
-  }
+
+.puzzle-piece {
+  background-image: url('img/pic1.jpg');
+  background-repeat: repeat;
+  border: 1px solid rgba(80, 80, 80, 0.3);
+  position: absolute;
+  z-index: 1;
+}
+
+.puzzle-blankPiece {
+  background-image: none;
+  background-color: white;
+  position: absolute;
+  z-index: 0;
+}
+
+#two {
+  background-position: right top;
+  left: 250px;
+  position: absolute;
+  top: 0px;
+}
+
+#three {
+  background-position: left bottom;
+  left: 0px;
+  position: absolute;
+  top:250px;
+}
+
+#four {
+  background-position: right bottom;
+  left:250px;
+  position: absolute;
+  top:250px;
+}
+
+.thumbnail {
+  height: 200px;
+  left: 700px;
+  position: absolute;
+  top: 400px;
+  width: 200px;
+}
